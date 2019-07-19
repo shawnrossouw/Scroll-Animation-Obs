@@ -1,0 +1,29 @@
+.example {
+  h2 {
+    span {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100px);
+    }
+  }
+  &-item {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100px);
+  }
+  &.show {
+    h2 {
+      span {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+    .example-item {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+/* Stylle the .show class on the root of the element on which the animates class was added. */
